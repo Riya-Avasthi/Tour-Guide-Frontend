@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            background-color: rgb(249, 240, 228);
+            height: 100vh;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2px 70px;
+            background: rgba(251, 229, 203, 0.33);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            display: inline-block;
+            padding-bottom: 0.3125rem;
+            font-size: 1.25rem;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1em;
+            color: rgb(51, 50, 49);
+            text-decoration: none;
+            font-weight: 500px;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: rgb(51, 50, 49);
+            ;
+            border-radius: 5px;
+            left: 0;
+            bottom: -6px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 60px;
+            color: rgb(255, 167, 59);
+            font-size: 55px;
+            font-family: "Lobster";
+        }
+
+        .about {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 5px;
+            /* border: 2px solid black; */
+            height: 100%;
+            gap: 10px;
+        }
+
+        .container .content {
+            /* border: 2px solid black; */
+            height: 70%;
+            width: 50%;
+            padding: 20px;
+            margin: 5px;
+            background-color: rgb(251, 226, 197);
+            border-radius: 6px;
+        }
+
+        .content h2 {
+            text-align: center;
+            padding: 20px;
+            font-size: 35px;
+            color: rgb(119, 84, 41);
+
+        }
+
+        .container p {
+            text-align:justify;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .container .content-box {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 70%;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .content-box img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .team-container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+        }
+
+        .team-box {
+            width: 300px;
+            height: 400px;
+            /* border: 2px solid red; */
+            margin: 10px;
+            /* padding: 10px; */
+            overflow: hidden;
+            position: relative;
+            background-color:  rgb(251, 226, 197);
+        }
+
+        .team-box .pic {
+            display: inline-block;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .team-box .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-info {
+            height: 100px;
+            width: 300px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .team-info h3 {
+            font-size: 20px;
+            color: rgb(119, 84, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="indexT.html">
+            <img src="images/logoo.png" alt="" class="img-logo">
+        </a>
+        <nav class="navigation">
+            <a href="indexT.html">Home</a>
+        </nav>
+    </header>
+    <h1>About Us</h1>
+    <section class="about">
+        <div class="container">
+            <div class="content">
+                <h2>Welcome to our website</h2>
+                <p>Namaste India is a comprehensive website for travel needs in India. It showcases popular
+                    destinations, diverse heritage, natural beauty, and vibrant lifestyle. Users can plan and execute
+                    their tours hassle-free, while immersing themselves in the local culture and traditions.Our website
+                    offers personalized local tour guides for a unique and adaptable experience. Local guides provide
+                    extensive and current knowledge, cultural insights, and practical assistance. They enhance
+                    communication, contribute to safety, and bring history and landmarks to life. Plus, hiring a local
+                    guide supports the local economy.</p>
+            </div>
+            <div class="content-box">
+                <img src="images/team-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="Team">
+        <h1>Our Team</h1>
+        <div class="team-container">
+            <div class="team-box">
+                <div class="pic">
+                    <img src="images/Riya-pic.jpeg" alt="">
+                </div>
+                <div class="team-info">
+                    <h3>Riya Avasthi</h3>
+                    <p>Computer Engineering Undergrade</p>
+                    <p>Currently in second year</p>
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="pic">
+                    <img src="images/Manjiri-pic2.jpeg" alt="">
+                </div>
+                <div class="team-info">
+                    <h3>Manjiri Bankar</h3>
+                    <p>Computer Engineering Undergrade</p>
+                    <p>Currently in second year</p>
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="pic">
+                    <img src="images/Pranjal-pic2.jpeg" alt="">
+                </div>
+                <div class="team-info">
+                    <h3>Pranjal Kapadnis</h3>
+                    <p>Computer Engineering Undergrade</p>
+                    <p>Currently in second year</p>
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="pic">
+                    <img src="images/Shravani-pic2.jpeg" alt="">
+                </div>
+                <div class="team-info">
+                    <h3>Shravani Porje</h3>
+                    <p>Computer Engineering Undergrade</p>
+                    <p>Currently in second year</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

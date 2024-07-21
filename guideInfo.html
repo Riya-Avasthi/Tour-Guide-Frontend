@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: cursive;
+            background: url(images/travel-guide.webp) no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            z-index: -1;
+        }
+
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2px 70px;
+            background: rgba(251, 229, 203, 0.33);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            display: inline-block;
+            padding-bottom: 0.3125rem;
+            font-size: 1.25rem;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.5em;
+            color: rgb(51, 50, 49);
+            ;
+            text-decoration: none;
+            font-weight: 500px;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: rgb(51, 50, 49);
+            ;
+            border-radius: 5px;
+            left: 0;
+            bottom: -6px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+
+        /* .backg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; 
+            min-height: 100vh;
+            background: url(images/travel-guide.webp) no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed; 
+            position: relative;
+            gap: 100px;
+        } */
+
+        /* .backg h1{
+            transform: translateY(-190px);
+            text-align: center;
+        } */
+
+        .blank {
+            width: 100%;
+            height: 150px;
+            border: none;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            color: bisque;
+        }
+
+        /* .guide{
+            background: url(images/travel-guide.webp) no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            
+        } */
+
+
+
+
+        .info {
+            height: 300px;
+
+            /* border: 1px solid black; */
+            width: 500px;
+            padding: 15px;
+            margin: 12px;
+            background-color: rgb(252, 233, 211);
+            border-radius: 10px;
+            font-size: 25px;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(250, 200, 138);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background-color: rgb(252, 179, 89);
+        }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+            /* border: 2px solid rgb(0, 0, 0); */
+            padding: 10px;
+            margin-top: 50px;
+            gap: 10px;
+        }
+
+        .container .box {
+            height: 300px;
+            width: 300px;
+            /* border: 2px solid gray; */
+            left: 0;
+            position: relative;
+            gap: 5px;
+            border-radius: 10px;
+        }
+
+        .box img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="indexT.html">
+            <img src="images/logoo.png" alt="" class="img-logo">
+        </a>
+        <nav class="navigation">
+            <a href="indexT.html">Home</a>
+            <a href="book.html">Back</a>
+        </nav>
+    </header>
+    <div class="blank"></div>
+    <h1>Available Guide !!</h1>
+
+    <main class="guide">
+
+
+
+        <section class="guideInfo">
+            <div class="container">
+                <div class="box">
+                    <img src="images/tour guide img1.webp" alt="">
+                </div>
+                <div class="info">
+                    <p><strong>Name:</strong> Mangesh Bansal</p>
+                    <p><strong>Contact:</strong> 123-456-7890</p>
+                    <p><strong>Experience:</strong> 3 years</p>
+                    <p><strong>Languages Known:</strong> Hindi, English, Marwadi, Gujarati, Spanish</p>
+                    <p><strong>Rating:</strong> 4 star </p>
+                    <button>Select Guide</button>
+                </div>
+            </div>
+        </section>
+        <section class="guideInfo">
+            <div class="container">
+                <div class="box">
+                    <img src="images/tour guide img2.webp" alt="">
+                </div>
+                <div class="info">
+                    <p><strong>Name:</strong> Nishchay Malhan</p>
+                    <p><strong>Contact:</strong> 123-456-7890</p>
+                    <p><strong>Experience:</strong> 5 years</p>
+                    <p><strong>Languages Known:</strong> Hindi, English, Marwadi, Japanese, Punjabi</p>
+                    <p><strong>Rating:</strong> 4.5 star </p>
+                    <button>Select Guide</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide Website</title>
+    <link rel="stylesheet" href="styleT.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+
+<body class="image1 fit-image" onload="startBackgroundChange()">
+    <header class="Header">
+        <div id="navbar">
+            <div>
+                <nav class="navbar-custom">
+                    <a class="logo" href="/en/">
+                        <img src="images/logoo.png" alt="" class="img-logo">
+                    </a>
+                    <h1 class="tagline">Lets Explore India More !!</h1>
+                    <div class="navbarMenu">
+                        <ul class="menuitems">
+                            <li class="litem">
+                                <a href="job.html" class="li1"><span>Job board</span></a>
+                            </li>
+                            <li class="litem"><a href="indexstates.html" class="li1"><span>States</span></a></li>
+                            <li class="litem"><a href="signIn.html" class="li1"><span>Sign Up</span></a></li>
+                            <li class="litem"><a href="login.html" class="li1"><span>Login</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search ">
+                        <button class="btn">
+                            <img src="searchicon.svg" alt="" width="18px">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">Namaste India</div>
+            <div class="right">
+                <!-- <div class="rightbox">
+
+                    <div class="b1">
+                        <img class="b1img" src="rajasthan.jpg" alt="">
+                    </div>
+                    <div class="b1"><img class="b1img" src="manaliimage.jpg" alt=""></div>
+                    <div class="b1"><img class="b1img" src="ooty.jpg" alt=""></div>
+                </div>
+                <div class="slidebtn">
+                    <button id="slideLeft">
+                        <img src="left.svg" alt="">
+                    </button>
+                    <button id="slideRight">
+                        <img src="right.svg" alt="">
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <div class="gap" style="padding: 80px;"></div>
+    <section class="section2">
+        <div class="destinations">
+            Top 10 Destinations
+            <div class="slidedestination">
+                <div class="dest">
+                    <img src="images/leh-ladakh.jpg" alt="">
+                    <p>LEH - LADAKH</p>
+                </div>
+                <div class="dest">
+                    <img src="images/rajasthandest.jpg" alt="" style=" height:168px; object-fit: cover;">
+                    <p>RAJASTHAN</p>
+                </div>
+                <div class="dest">
+                    <img src="images/Shillong-1.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>SHILONG</p>
+                </div>
+                <div class="dest">
+                    <img src="images/manalidest.jpg" alt="">
+                    <p>MANALI</p>
+                </div>
+                <div class="dest">
+                    <img src="images/lakshadweepdest.jpg" alt="">
+                    <p>LAKSHADWEEP</p>
+                </div>
+            </div>
+            <div class="slidedestination">
+                <div class="dest">
+                    <img src="images/OOTY.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>OOTY</p>
+                </div>
+                <div class="dest">
+                    <img src="images/KOLKATA.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>KOLKATA</p>
+                </div>
+                <div class="dest">
+                    <img src="images/KASHI.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>VARANASI</p>
+                </div>
+                <div class="dest">
+                    <img src="images/Lonavala.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>LONAVALA</p>
+                </div>
+                <div class="dest">
+                    <img src="images/Goa.jpg_cf-webp_w-848_h-551" alt="">
+                    <p>GOA</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- <hr> -->
+    <section class="section3">
+        <div class="blogs">
+            Travel Blogs
+            <div class="travelblog"> <!--container-->
+                <img src="images/traveler.jpg" alt="">
+                <div class="txt"> <!--textblock-->
+                    <h2>
+                        <!-- Most Popular India.info Insta Handles -->
+                    </h2>
+                </div>
+            </div>
+            <div class="flexblog">
+                <a href="https://www.youtube.com/@kajal_and_kshitij">
+                <div class="blog1">
+                    <img src="images/traveler1.jpg" alt="" height="250px" style="object-fit: cover;">
+                    <p>Trends</p>
+                </div></a>
+                <a href="https://www.veenaworld.com/blog/ram-mandir">
+                <div class="blog1">
+                    <img src="images/ram-mandir.jpg" alt="" height="250px" style="object-fit: cover;">
+                    <p>Golden moment for India</p>
+                </div></a>
+                <a href="https://traveltalesfromindia.in/">
+                <div class="blog1">
+                    <img src="images/brij-bageecha.jpg" alt="" height="250px" style="object-fit: cover;">
+                    <p>Travel Tales from India and Abroad</p>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <!-- <hr> -->
+    <section class="section4">
+        <div class="BookGuide">
+            <p style="padding: 40px;">Book Your Local Guide</p>
+            <div class="bookg">
+                <div class="guidepic">
+                    <img id="guideImage" src="images/localguide.jpg" alt="">
+                </div>
+                <div class="bookinfo">
+                    <div class="text">
+                        Book Your Guide NOW !!!
+                    </div>
+                    <p style="font-size: 20px" ;>Unlock Hidden Gems with Local Experts!</p>
+                    <a href="book.html">
+                        <button class="bton">BOOK</button>    
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <hr> -->
+    <section class="section5">
+        <div class="Agencies">
+            <div class="text" style="padding: 25px;">
+                Exciting Packages !!
+            </div>
+            <div class="agen">
+                <div class="slide-container swiper">
+                    <div class="slidecontent">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="images/Chardham-Yatra.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Chardham-Yatra</h2>
+                                    <p class="description">Char Dham Pilgrimage Tour is one of the most sacred journeys
+                                        to fulfill transcendent quests in life</p>
+                                    <a href="https://www.tourmyindia.com/packages-tour-india/pilgrimage-tour-packages/chardham-pilgrimage-tour.html"
+                                        target="_blank">
+
+                                        <button class="button">know more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Add more cards here -->
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="images/heritage packages.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Heritage Packages</h2>
+                                    <p class="description"> India heritage and culture richness makes this country more
+                                        favorable among explorers and heritage lovers.</p>
+                                    <a href="https://www.tourmyindia.com/golden-triangle/6nights-7days-golden-triangle-tour.html"
+                                        target="_blank">
+
+                                        <button class="button">know more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="images/adventure-trips-in-india.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Adventure Packages</h2>
+                                    <p class="description">Looking for a destination that satiates your thirst for
+                                        adventure? India is a must vist!!</p>
+                                    <a href="https://www.tourmyindia.com/packages-tour-india/adventure-tour-packages/"
+                                        target="_blank">
+
+                                        <button class="button">know more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="images/family-tour-packages.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Family Packages</h2>
+                                    <p class="description">Travelling is the best way for a family to bond and create
+                                        memories. A family that travels together stays together!</p>
+                                    <a href="https://www.veenaworld.com/speciality-tours/family-tour-packages/spl"
+                                        target="_blank">
+
+                                        <button class="button">know more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="images/honeymoon-india-package.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Honeymoon Packages</h2>
+                                    <p class="description">India honeymoon packages present a delightful array of
+                                        choices for newlywed couples.</p>
+                                    <a href="https://traveltriangle.com/honeymoon-packages/india" target="_blank">
+
+                                        <button class="button">know more</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <hr> -->
+    <!-- <div class="section6">
+        <div class="subcription">
+            subscribe
+            <div class="subscribe"></div>
+        </div>
+    </div>
+    <hr> -->
+    <footer>
+        <div class="imagblured">
+            <img src="images/travelling.jpg" alt="">
+        </div>
+
+        <div class="foot">
+            <div class="l1"></div>
+            <img src="images/kisspng-mizoram-incredible-india-cultural-heritage-tourism-india-map-5ac2728aa57b47.4571955315226927466778.png"
+                alt="">
+            <div class="l2"></div>
+        </div>
+        <div class="lastfoot">
+            <div class="leftfoot">
+                <div class="log">
+                    <img src="images/logoo.png" alt="">
+                </div>
+            </div>
+            <div class="rightfoot">
+                <a href="aboutUs.html"><span>About us</span></a>
+                <a href="job.html"><span>Jobs</span></a>
+                <a href=""><span>Privacy Policy</span></a>
+                <a href=""><span>Contact us</span></a>
+                <div class="fticons">
+
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/whatsapp-stroke-rounded.svg" alt="whatsapp" width="24"
+                            height="24" />
+                    </div>
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/instagram-stroke-rounded.svg" alt="instagram"
+                            width="24" height="24" />
+                    </div>
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/snapchat-stroke-rounded.svg" alt="snapchat" width="24"
+                            height="24" />
+                    </div>
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/facebook-02-stroke-rounded.svg" alt="facebook-02"
+                            width="24" height="24" />
+                    </div>
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/linkedin-01-stroke-rounded.svg" alt="linkedin-01"
+                            width="24" height="24" />
+                    </div>
+                    <div class="ft">
+                        <img src="https://cdn.hugeicons.com/icons/twitter-stroke-rounded.svg" alt="twitter" width="24"
+                            height="24" />
+                    </div>
+                </div>
+                <div class="ftinfo">
+                    namasteindiatours@gmail.com
+                </div>
+            </div>
+
+        </div>
+        <div class="foot-footer">
+            Your next adventure awaits in India - pack your bags and dive into a world of wonders !!!
+        </div>
+        <div class="foot-footer">
+            All right reserved.
+        </div>
+        <div class="foot-footer">
+            CopyRight©2023, Namaste India Tour Pvt. Ltd
+        </div>
+    </footer>
+
+    <script src="scriptT.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slidecontent", {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                9500: {
+                    slidesPerView: 3,
+                },
+            },
+        })
+    </script>
+</body>
+
+</html>

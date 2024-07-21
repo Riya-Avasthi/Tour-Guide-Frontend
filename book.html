@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your guide</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="indexT.html">
+            <img src="images/logoo.png" alt="" class="img-logo">
+        </a>
+        <nav class="navigation">
+            <a href="indexT.html">Home</a>
+            <a href="aboutUs.html">About us</a>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="book-form">
+            <h2>Book Your Tour Guide</h2>
+            <form action="guideInfo.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="destination">Destination: </label>
+                <input type="text" id="destination" name="destination" placeholder="Destination" required>
+
+                <label for="arrival-date">Arrival-Date: </label>
+                <input type="date" id="arrival-date" name="arrival-date" required>
+
+                <label for="departure-date">Departure-Date: </label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <button type="submit">Search Guide</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Guide Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Tour Guide Booking Form</h2>
+    <form id="bookingForm" action="guideInfo.html" method="GET">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="text" id="contact" name="contact" placeholder="Contact Number" required>
+      <input type="text" id="destination" name="destination" placeholder="Destination" required>
+      <input type="date" id="departureDate" name="departureDate" required>
+      <input type="date" id="arrivalDate" name="arrivalDate" required>
+      <button type="submit">Search Guide</button>
+    </form>
+  </div>
+</body>
+</html> -->

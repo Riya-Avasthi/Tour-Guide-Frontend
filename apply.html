@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide Job Application</title>
+    <style>
+        /* Basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        header {
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2px 70px;
+            background: rgba(251, 229, 203, 0.33);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            display: inline-block;
+            padding-bottom: 0.3125rem;
+            font-size: 1.25rem;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1em;
+            color: rgb(51, 50, 49);
+            ;
+            text-decoration: none;
+            font-weight: 500px;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: rgb(51, 50, 49);
+            ;
+            border-radius: 5px;
+            left: 0;
+            bottom: -6px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: url(images/travel-guide.webp) no-repeat; */
+            background-color: rgb(252, 239, 225);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blank{
+            background-color: rgb(252, 239, 225);
+            border: none;
+            padding: 50px;
+        }
+
+        .blank h1{
+            text-align: center;
+            font-family: "Lobster";
+            font-size: 40px;
+            text-align: center;
+            padding: 25px;
+            color: rgb(212, 135, 58);
+        }
+
+        .apply-form {
+            background-color: rgba(255, 228, 196, 0.553);
+            padding: 20px;
+            border: 2px solid rgb(251, 198, 133);
+            border-radius: 10px;
+            max-width: 500px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .apply-form h2 {
+            font-family: "Lobster";
+            font-size: 40px;
+            text-align: center;
+            padding: 25px;
+            color: rgb(175, 110, 44);
+            font-weight: 200px;
+        }
+
+        .apply-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .apply-form input {
+            padding: 8px;
+            border: 1px solid rgb(246, 186, 113);
+            border-radius: 5px;
+        }
+
+        .apply-form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(254, 221, 181);
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .apply-form button:hover {
+            background-color: rgb(255, 204, 142);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea,
+        select,.submit
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .submit{
+            background-color: rgb(252, 205, 147);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(252, 190, 115);
+        }
+
+        .remember-forgot{
+            font-size: .9em;
+            color: rgb(51, 50, 49);
+            font-weight: 500;
+            margin: -15px 0 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .remember-forgot label input{
+            accent-color:rgb(51, 50, 49);
+            margin-right: 3px;
+        }
+
+        .remember-forgot a{
+            color:rgb(51, 50, 49);
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="indexT.html">
+            <img src="images/logoo.png" alt="" class="img-logo">
+        </a>
+        <nav class="navigation">
+            <a href="indexT.html">Home</a>
+            <a href="#">About us</a>
+        </nav>
+    </header>
+    <div class="blank"><h1>Tour Guide Job Application Form</h1></div>
+    <main>
+        <div class="background">
+            <div class="apply-form">
+                <h2>Register Yourself as a Tour guide </h2>
+                <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                    <label for="resume">Upload Resume (PDF only):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+                    <label for="image">Upload Your Image:</label>
+                    <input type="file" id="image" name="image" accept=".pdf">
+
+                    <label for="linkedin">LinkedIn Profile (Optional):</label>
+                    <input type="text" id="linkedin" name="linkedin">
+
+                    <label for="portfolio">Portfolio (Optional):</label>
+                    <input type="text" id="portfolio" name="portfolio">
+
+                    <label for="highestEducation">Highest Education Attained:</label>
+                    <input type="text" id="highestEducation" name="highestEducation" required>
+
+                    <label for="institution">Name of Institution:</label>
+                    <input type="text" id="institution" name="institution" required>
+
+                    <label for="fieldOfStudy">Field of Study/Major:</label>
+                    <input type="text" id="fieldOfStudy" name="fieldOfStudy" required>
+
+                    <label for="graduationYear">Graduation Year:</label>
+                    <input type="text" id="graduationYear" name="graduationYear" required>
+
+                    <label for="tourGuideExperience">Tour Guide Experience (if any):</label>
+                    <textarea id="tourGuideExperience" name="tourGuideExperience"></textarea>
+
+                    <label for="languages">Language Proficiency:</label>
+                    <input type="text" id="languages" name="languages" required>
+
+                    <label for="availability">Availability:</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Select Availability</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Seasonal">Seasonal</option>
+                    </select>
+
+                    <label for="references">References (provide at least two):</label>
+                    <textarea id="references" name="references" required></textarea>
+
+                    <label for="additionalInfo">Additional Information or Comments:</label>
+                    <textarea id="additionalInfo" name="additionalInfo"></textarea>
+
+                    <!-- <input type="checkbox" id="backgroundCheck" name="backgroundCheck" required>
+                    <label for="backgroundCheck">Consent to Background Check</label> -->
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" id="backgroundCheck" name="backgroundCheck" required>Consent to Background Check</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>I have read and agree to the Privacy Policy</label>
+                    </div>
+
+                    <!-- <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy">I have read and agree to the Privacy Policy</label> -->
+
+                    <button type="submit" class="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        function popupmessage(){
+            alert("your Application Submitted successfully !!")
+        }
+    
+    </script>
+</body>
+
+</html>

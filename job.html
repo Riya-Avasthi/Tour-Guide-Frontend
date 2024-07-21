@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Page</title>
+    <style>
+        /* Basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: cursive;
+            background-color: rgb(255, 255, 255);
+        }
+
+        header {
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2px 70px;
+            background: rgba(251, 229, 203, 0.33);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            display: inline-block;
+            padding-bottom: 0.3125rem;
+            font-size: 1.25rem;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1em;
+            color: rgb(51, 50, 49);
+            ;
+            text-decoration: none;
+            font-weight: 500px;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: rgb(51, 50, 49);
+            ;
+            border-radius: 5px;
+            left: 0;
+            bottom: -6px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #job-listings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #job-listings h2 {
+            font-family: "Lobster";
+            font-size: 40px;
+            text-align: center;
+            padding: 25px;
+            color: rgb(212, 135, 58);
+        }
+
+        #jobs {
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+            margin-bottom: 10px;
+            list-style: none;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 16px 16px 20px rgb(249, 190, 117);
+        }
+
+        #jobs h3 {
+            text-align: center;
+            color: rgb(185, 106, 11);
+            font-size: 35px;
+        }
+
+        #jobs p {
+            padding: 10px;
+        }
+
+        .apply-btn {
+            /* background-color: rgb(185, 106, 11); */
+            background-color: bisque;
+            color: rgb(185, 106, 11);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            cursor: pointer;
+            border-color: rgb(249, 190, 117);
+            font-size: 15px;
+            /* border: none; */
+
+        }
+
+        #jobs button {
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="indexT.html">
+            <img src="images/logoo.png" alt="" class="img-logo">
+        </a>
+        <nav class="navigation">
+            <a href="indexT.html">Home</a>
+            <a href="aboutUs.html">About us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="job-listings">
+            <h2>Featured Jobs</h2>
+            <div id="jobs">
+
+                <h3>Tour Guide</h3>
+                <p>Company: Nasmate India Tours Inc.</p>
+                <p>Location: Various locations</p>
+                <p>Description: Assisting the tourists</p>
+                <button class="apply-btn" onclick="window.location.href='apply.html'">Apply</button>
+
+                <!-- Add more job listings here -->
+                </ul>
+        </section>
+    </main>
+</body>
+
+</html>
